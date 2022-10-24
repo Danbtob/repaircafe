@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Repair Cafe</title>
+
+  <!-- Font Awesome -->
+  <!-- this is font awsome, wich includes javscript for some icons -->
+  <script src="https://kit.fontawesome.com/6878b39388.js" crossorigin="anonymous"></script>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Inconsolata:wght@200;300;400&family=Montserrat:wght@300;700;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <style type="text/css">
+    <style type="text/css">#event-content {
+      display: flex;
+      position: relative;
+      flex-flow: column wrap;
+      background-size: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10%;
+      padding-top: 5%;
+      padding-right: 15%;
+    }
+
+    .main-content {
+      background-color: #3eb489;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .content-header {
+      margin-left: 44%;
+      margin-top: 6%;
+      margin-bottom: 5%;
+    }
+
+    .learn2rep {
+      background-image: url(css/css_images/learn2repair_filtered.png);
+      display: block;
+      position: relative;
+      color: #F5F5F5;
+      padding-top: 3%;
+      padding-left: 2%;
+      padding-bottom: 4%;
+      margin-bottom: 5%;
+      border-radius: 25px;
+      background-size: 100%;
+      transition: 0.5s all ease-in-out;
+      padding-right: 3%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .kidzwksp {
+      background-image: url(css/css_images/kidzwksp_filtered.png);
+      display: block;
+      position: relative;
+      color: #F5F5F5;
+      padding-top: 3%;
+      padding-left: 2%;
+      padding-bottom: 4%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      border-radius: 25px;
+      background-size: 100%;
+      transition: 0.5s all ease-in-out;
+      padding-right: 3%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .repairoff {
+      background-image: url(css/css_images/repairoff_filtered.png);
+      display: block;
+      position: relative;
+      color: #F5F5F5;
+      padding-top: 3%;
+      padding-left: 2%;
+      padding-bottom: 4%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      border-radius: 25px;
+      background-size: 100%;
+      transition: 0.3s all ease-in-out;
+      padding-right: 3%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .nexticon {
+      position: absolute;
+      display: inline-block;
+      max-width: 20px;
+      width: 100%;
+      margin-top: 3%;
+      margin-left: 90%;
+    }
+
+    .learn2rep:hover {
+      transform: scale(1.05);
+    }
+
+    .kidzwksp:hover {
+      transform: scale(1.05);
+    }
+
+    .repairoff:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1000px) {
+      .content-header {
+        margin-left: 40%;
+      }
+
+      .nexticon {
+        max-width: 10px;
+      }
+    }
+
+    @media (max-width: 750px) {
+      p {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .content-header {
+        margin-left: 37%
+      }
+    }
+
+    @media (max-width: 150px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    footer {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <link rel="stylesheet" href="css/styles+.css">
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</head>
+
+<header>
+  <!-- navbar -->
+  <nav class="navbar-nav">
+    <a href="index.html"><img src="images/letter.png" alt="logo" class="logo"></a>
+    <div class="menu-items">
+      <ul>
+        <li id="navitem1" class="navbar-item"><a href="index.html">Home</a></li>
+        <li id="navitem2" class="navbar-item"><a href="about.html">About Us</a></li>
+        <li id="navitem3" class="navbar-item"><a href="contact.html">Contact</a></li>
+        <li class="navbar-item">
+          <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+              <a id="dropitem1" href="index.html">Home</a>
+              <a id="dropitem3" href="contact.html">Contact</a>
+              <a id="dropitem2" href="about.html">About Us</a>
+              <a href="toolkit.html">Our Toolkit</a>
+              <a href="events.html">Events</a>
+              <a href="reviews.html">Reviews</a>
+              <a href="work.html">Work With Us</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <section id="event-content">
+    <div class="main-content">
+      <div class="content-header">
+        <h1 style="color: white;">Events</h1>
+      </div>
+      <div class="learn2rep">
+        <img class="nexticon" src="css/css_images/nexticon.png">
+        <h2>Learn2Repair</h2>
+        <h3>October 30 @ 1 PM</h3>
+        <div class="learntext">
+          <p>Want to learn how to fix your own laptop, phone, bike,
+            electric scooter, and much, much more? Stop by our Learn2Repair Event to
+            get hand-on teaching from our staff on repairing anything you can put
+            your mind to, all over a fresh cup of coffee.</p>
+        </div>
+      </div>
+      <div class="kidzwksp">
+        <img class="nexticon" src="css/css_images/nexticon.png">
+        <h2>Kidz Workshop</h2>
+        <h3>November 3 @ 10 AM</h3>
+        <div class="kwtext">
+          <p>Who says kids can't have fun? Bring your
+            child to our Kidz Workshop Event for fun arts and crafts,
+            juices, and snacks that will keep them occupied while you enjoy
+            a cup of coffee.</p>
+        </div>
+      </div>
+      <div class="repairoff">
+        <img class="nexticon" src="css/css_images/nexticon.png">
+        <h2>Repair-Off</h2>
+        <h3>November 5 @ 10 AM</h3>
+        <div class="offtext">
+          <p>Do you believe that you are the best at repairing things? Put
+            your skills to the test against other contestants to fix multiple
+            technologies and appliances in our tournament style Repair-Off.
+            Prizes for participation, 3rd, 2nd, and 1st places.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="foot">
+      <img src="images/logo.png" alt="logo" class="logo-small">
+      <div class="hours">
+        <p class="foot-item-first">Cafe Hours</p>
+        <p class="foot-item">Mon-Fri: 7am-9pm</p>
+        <p class="foot-item">Sat: 8am-9pm</p>
+        <p class="foot-item">Sun: 9am-7pm</p>
+      </div>
+      <div class="location">
+        <p class="foot-item-first">Location</p>
+        <p class="foot-item">210 Highland Ave</p>
+        <p class="foot-item">Somerville</p>
+        <p class="foot-item">MA, 02143</p>
+      </div>
+      <div class="quick-contact">
+        <p class="foot-item-first">Contact</p>
+        <p class="foot-item">Tel: (732) 403-0144</p>
+        <p class="foot-item">Fax: (310) 293-2656</p>
+        <p class="foot-item">Email: repcafe@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

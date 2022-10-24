@@ -1,0 +1,285 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+} 
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family:'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+p {
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+}
+
+header {
+    background-color: #feecff;
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    top: 0%;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.logo {
+    max-width: 400px;
+    width: 60%;
+    padding-left: 10%;
+    min-width: 100px;
+    padding-top: 2%;
+}
+
+.menu-items {
+    margin-top: 1rem;
+    margin-left: 30%;
+}
+
+.navbar-item {
+    display: inline;
+    padding: 0 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #161616;
+}
+
+.dropbtn {
+    background-color: #fed8f6;
+    color: #161616;
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    border: solid 2px #fec1f1;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffeffe;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #fed8f6;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #fec1f1;}
+
+#dropitem1 {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: none;
+    min-width: 160px;
+}
+
+#dropitem2 {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: none;
+    min-width: 160px;
+}
+
+#dropitem3 {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: none;
+    min-width: 160px;
+}
+
+footer {
+    background-color: #feecff;
+    padding: 30px 1px;
+}
+
+.foot {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    align-items: center;
+}
+
+.logo-small {
+    max-width: 200px;
+    width: 85%;
+    padding-left: 10%;
+}
+
+.hours {
+    margin-left: 23%;
+}
+
+.location {
+    margin-left: 10%;
+}
+
+.quick-contact {
+    margin-left: 10%;
+}
+
+.foot-item {
+    font-size: .8rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #161616;
+}
+
+.foot-item-first {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#content {
+    min-height: 100vh;
+}
+
+.helpicon {
+  position: fixed;
+  max-width: 90px;
+  width: 100%;
+  z-index: 10;
+  top: 80%;
+  left: 90%;
+}
+
+@media screen and (max-width: 1400px) {
+    #navitem3 {
+        display: none;
+    }
+
+    #dropitem3 {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #navitem2 {
+        display: none;
+    }
+
+    #dropitem2 {
+        display: inline-block;
+    }
+
+    .foot-item {
+        font-size: .6rem;
+    }
+    
+    .quick-contact {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+        height: 7%
+    }
+
+    .navbar-nav {
+        bottom: 100%;
+    }
+
+    #navitem1 {
+        display: none;
+    }
+
+    #dropitem1 {
+        display: inline-block;
+    }
+
+    .menu-items {
+        margin-left: 50%;
+    }
+
+    .navbar-item {
+        font-size: .8rem;
+    }
+
+    .dropbtn {
+        font-size: .8rem;
+    }
+
+    .dropdown-content {
+        right: 0%;
+    }
+
+    .foot {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-small {
+        max-width: 100px;
+        width: 85%;
+        padding-left: 0%;
+        padding-right: 3%;
+    }
+
+    .hours {
+        margin-left: 0%;
+    }
+    
+    .location {
+        margin-left: 0%;
+    }
+    
+    .quick-contact {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .helpicon {
+      max-width: 50px;
+    }
+}

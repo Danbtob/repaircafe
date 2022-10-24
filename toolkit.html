@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Repair Cafe</title>
+
+  <!-- Font Awesome -->
+  <!-- this is font awsome, wich includes javscript for some icons -->
+  <script src="https://kit.fontawesome.com/6878b39388.js" crossorigin="anonymous"></script>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Inconsolata:wght@200;300;400&family=Montserrat:wght@300;700;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <style type="text/css">
+    footer {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    #toolkit-head {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background-color: #3eb489;
+      color: white;
+      text-align: center;
+    }
+
+    .img2 {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .img1 {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .row {
+      display: flex;
+      flex-flow: no-wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8%;
+    }
+
+    .toolkit-title {
+      color: white;
+    }
+
+    .text1 {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5%;
+    }
+
+    h1 {
+      margin-top: 0%;
+      margin-bottom: 5%;
+      padding-top: 10%;
+    }
+
+    #features1 {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background-color: white;
+      color: black;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 5%;
+      padding-top: 5%;
+    }
+
+    .text2 {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5%;
+    }
+
+    #testimonial1 {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background-color: #3eb489;
+      color: white;
+      text-align: center;
+    }
+
+    .text3 {
+      padding-top: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5%;
+    }
+
+    .video {
+      padding-bottom: 5%;
+    }
+
+    @media (max-width: 692px) {
+      .img2 {
+        padding-top: 5%;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .ytvid {
+        max-width: 200px;
+        height: auto;
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/styles+.css">
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</head>
+
+<header>
+  <!-- navbar -->
+  <nav class="navbar-nav">
+    <a href="index.html"><img src="images/letter.png" alt="logo" class="logo"></a>
+    <div class="menu-items">
+      <ul>
+        <li id="navitem1" class="navbar-item"><a href="index.html">Home</a></li>
+        <li id="navitem2" class="navbar-item"><a href="about.html">About Us</a></li>
+        <li id="navitem3" class="navbar-item"><a href="contact.html">Contact</a></li>
+        <li class="navbar-item">
+          <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+              <a id="dropitem1" href="index.html">Home</a>
+              <a id="dropitem3" href="contact.html">Contact</a>
+              <a id="dropitem2" href="about.html">About Us</a>
+              <a href="toolkit.html">Our Toolkit</a>
+              <a href="events.html">Events</a>
+              <a href="reviews.html">Reviews</a>
+              <a href="work.html">Work With Us</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <section id="toolkit-head">
+    <h1 class="toolkit-title">Our Toolkit</h1>
+    <p class="text1">This is where Repair Cafe can help you! Instead of disposing of your item, our trained
+      staff members can help you repair whatever is needed. Our process is very simple -- bring your damaged goods to
+      our
+      shop, explain the problem you are having with your item, and we will fix it! Our customer guarantee is that no
+      item
+      is too large, complex, or difficult for us to repair, and our promise to you is that we will not return any item
+      brought to us until it is fully functioning again. </p>
+    <div class="row">
+      <img class="img1" src="repairimg1.jpg" alt="repair1" style="width:100%">
+      <img class="img2" src="repairimg2.jpg" alt="repair2" style="width:100%">
+    </div>
+  </section>
+  <section id="features1">
+    <h2>Why Choose Us?</h2>
+    <p class="text2">For us, our cafe not only can help save the environment and help make others
+      environmentally conscious, but more importantly, can be a lot cheaper than replacing the item in question. With
+      our
+      services, we can get you back with a fully functioning machine or good in a short amount of time at a much more
+      affordable price. </p>
+  </section>
+
+  <!-- testimonials -->
+  <section id="testimonial1">
+    <p class='text3'>Don't just take our word for it, however. Check out this video explaining the purpose of repair
+      cafe's worldwide! </p>
+    <div class="video">
+      <iframe class="ytvid" width="560" height="315" padding="200px" src="https://www.youtube.com/embed/XPIKxZUPpfc"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;    picture-in-picture"
+        allowfullscreen>
+      </iframe>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="foot">
+      <img src="images/logo.png" alt="logo" class="logo-small">
+      <div class="hours">
+        <p class="foot-item-first">Cafe Hours</p>
+        <p class="foot-item">Mon-Fri: 7am-9pm</p>
+        <p class="foot-item">Sat: 8am-9pm</p>
+        <p class="foot-item">Sun: 9am-7pm</p>
+      </div>
+      <div class="location">
+        <p class="foot-item-first">Location</p>
+        <p class="foot-item">210 Highland Ave</p>
+        <p class="foot-item">Somerville</p>
+        <p class="foot-item">MA, 02143</p>
+      </div>
+      <div class="quick-contact">
+        <p class="foot-item-first">Contact</p>
+        <p class="foot-item">Tel: (732) 403-0144</p>
+        <p class="foot-item">Fax: (310) 293-2656</p>
+        <p class="foot-item">Email: repcafe@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

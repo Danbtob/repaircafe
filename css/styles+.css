@@ -70,7 +70,7 @@ header {
 
 .menu-items {
     margin-top: 1rem;
-    margin-left: 45%;
+    margin-left: 37%;
 }
 
 .navbar-item {
@@ -325,9 +325,12 @@ hr {
     }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1340px) {
     #navitem2 {
         display: none;
+    }
+    .menu-items {
+      margin-left: 35%;
     }
 
     #dropitem2 {
@@ -362,7 +365,7 @@ hr {
     }
 
     .menu-items {
-        margin-left: 57%;
+        margin-left: 45%;
     }
 
     .navbar-item {
